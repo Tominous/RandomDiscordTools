@@ -38,14 +38,14 @@ let RandomDiscordTools = (() => {
         {
             title: "New Features",
             type: "added",
-            items: ["New info button again but better.",
+            items: ["New information button again but better.",
                     "New InfoButton class.",
                     ]
         },
         {
             title: "Improvements",
             type: "improved",
-            items: ["The info button now uses React instead pf DOM manipulation, credit to Strencher for inspiration.",
+            items: ["The information button now uses React instead pf DOM manipulation, credit to Strencher for inspiration.",
                     "The button now appears and reappears when you change the selection setting.",
                     "The button has it's own class for patching and logging"
                     ]
@@ -116,10 +116,10 @@ let RandomDiscordTools = (() => {
                 try {
                     console.group("Server:", server.name);
                         console.log("Name:", server.name);
-                        console.log("Server Id:", server.id);
+                        console.log("Server ID:", server.id);
                         console.log("Description:", server.description);
                         console.log("Owner:", this.owner(server.ownerId));
-                        console.log("Owner's Id:", server.ownerId);
+                        console.log("Owner's ID:", server.ownerId);
                         console.log("Joined At:", server.joinedAt);
                         console.log("Server Location:", server.region);
                         console.groupCollapsed("%cFull object 👇", this.css.object);
@@ -141,8 +141,8 @@ let RandomDiscordTools = (() => {
                 try {
                     console.group("Channel:", channel.name);
                         console.log("Name:", channel.name);
-                        console.log("Server Id:", channel.guild_id);
-                        console.log("Channel Id:", channel.id);
+                        console.log("Server ID:", channel.guild_id);
+                        console.log("Channel ID:", channel.id);
                         console.log("Topic:", channel.topic);
                         console.groupCollapsed("%cFull object 👇", this.css.object);
                             console.log(channel);
@@ -163,7 +163,7 @@ let RandomDiscordTools = (() => {
                 try {
                     console.group("User:", user.username);
                         console.log("Name:", user.username);
-                        console.log("User Id:", user.id);
+                        console.log("User ID:", user.id);
                         console.log("Tag:", user.tag);
                         console.log("Created at:", user.createdAt);
                         console.groupCollapsed("%cFull object 👇", this.css.object);
@@ -217,7 +217,7 @@ let RandomDiscordTools = (() => {
         }
         render() {
             return React.createElement(this.ToolTip, {
-                text: "Print info to console",
+                text: "Print information to console",
                 position: "top",
                 color: "black"
                 }, e => React.createElement('button', {
